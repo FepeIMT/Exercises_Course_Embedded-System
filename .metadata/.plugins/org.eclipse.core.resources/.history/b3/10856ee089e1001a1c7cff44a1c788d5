@@ -51,7 +51,7 @@ void configure_priority_for_irqs(uint8_t irq_no, uint8_t priority_value)
 int main(void)
 {
 	//1.- Lets Configure the priority for the peripherals
-	configure_priority_for_irqs(IRQNO_TIMER2, 0x60);
+	configure_priority_for_irqs(IRQNO_TIMER2, 0x80);
 
 	configure_priority_for_irqs(IRQNO_I2C1, 0x70);
 

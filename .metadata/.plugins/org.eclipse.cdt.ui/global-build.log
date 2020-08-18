@@ -1,4 +1,4 @@
-13:11:59 **** Build of configuration Debug for project interrupt_priority ****
+14:36:17 **** Build of configuration Debug for project interrupt_priority ****
 make -j6 all 
 arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32l4p5zgtx.o" "../Startup/startup_stm32l4p5zgtx.s"
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32L4PLUS -DSTM32L4P5ZGTx -DDEBUG -DNUCLEO_L4P5ZG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
@@ -14,10 +14,17 @@ arm-none-eabi-size   interrupt_priority.elf
 arm-none-eabi-objdump -h -S  interrupt_priority.elf  > "interrupt_priority.list"
 arm-none-eabi-objcopy  -O binary  interrupt_priority.elf  "interrupt_priority.bin"
    text	   data	    bss	    dec	    hex	filename
-   3512	    120	   1584	   5216	   1460	interrupt_priority.elf
+   3664	    128	   1584	   5376	   1500	interrupt_priority.elf
 Finished building: default.size.stdout
  
 Finished building: interrupt_priority.bin
 Finished building: interrupt_priority.list
  
+ 
+14:36:23 **** Incremental Build of configuration Debug for project interrupt_priority ****
+make -j6 all 
+arm-none-eabi-size   interrupt_priority.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3664	    128	   1584	   5376	   1500	interrupt_priority.elf
+Finished building: default.size.stdout
  
