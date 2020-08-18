@@ -35,10 +35,6 @@ uint32_t *pNVIC_ISPRBase = (uint32_t*)0xE000E200;
 void configure_priority_for_irqs(uint8_t irq_no)
 {
 
-	//1. find out iprx
-	uint8_t iprx = irq_no /4;
-	uint
-
 }
 
 int main(void)
