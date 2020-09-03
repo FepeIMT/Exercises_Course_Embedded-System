@@ -1,41 +1,34 @@
-13:09:47 **** Clean-only build of configuration Debug for project fault_gen ****
-make -j6 clean 
-make: *** No rule to make target 'clean'.  Stop.
-"make -j6 clean" terminated with exit code 2. Build might be incomplete.
-13:09:47 **** Build of configuration Debug for project fault_gen ****
+12:20:43 **** Incremental Build of configuration Debug for project svc_number ****
 make -j6 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32l4p5zgtx.o" "../Startup/startup_stm32l4p5zgtx.s"
-arm-none-eabi-gcc "../Src/main-1.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32L4PLUS -DSTM32L4P5ZGTx -DDEBUG -DNUCLEO_L4P5ZG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main-1.d" -MT"Src/main-1.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main-1.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32L4PLUS -DSTM32L4P5ZGTx -DDEBUG -DNUCLEO_L4P5ZG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32L4PLUS -DSTM32L4P5ZGTx -DDEBUG -DNUCLEO_L4P5ZG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-../Src/main-1.c:10:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32L4PLUS -DSTM32L4P5ZGTx -DDEBUG -DNUCLEO_L4P5ZG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:21:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
    #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
     ^~~~~~~
-arm-none-eabi-gcc -o "fault_gen.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pepe_\STM32CubeIDE\Embedded Systems Programming on ARM Cortex-M3-M4 Processor\fault_gen\STM32L4P5ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="fault_gen.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: fault_gen.elf
+arm-none-eabi-gcc -o "svc_number.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pepe_\STM32CubeIDE\Embedded Systems Programming on ARM Cortex-M3-M4 Processor\svc_number\STM32L4P5ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="svc_number.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: svc_number.elf
  
-arm-none-eabi-size   fault_gen.elf 
-arm-none-eabi-objdump -h -S  fault_gen.elf  > "fault_gen.list"
-arm-none-eabi-objcopy  -O binary  fault_gen.elf  "fault_gen.bin"
+arm-none-eabi-objdump -h -S  svc_number.elf  > "svc_number.list"
+arm-none-eabi-objcopy  -O binary  svc_number.elf  "svc_number.bin"
+arm-none-eabi-size   svc_number.elf 
    text	   data	    bss	    dec	    hex	filename
-   5848	    120	   1584	   7552	   1d80	fault_gen.elf
+    784	     16	   1568	   2368	    940	svc_number.elf
 Finished building: default.size.stdout
  
-Finished building: fault_gen.bin
-Finished building: fault_gen.list
+Finished building: svc_number.list
+Finished building: svc_number.bin
  
  
-13:10:01 **** Incremental Build of configuration Debug for project fault_gen ****
+12:20:51 **** Incremental Build of configuration Debug for project svc_number ****
 make -j6 all 
-arm-none-eabi-size   fault_gen.elf 
+arm-none-eabi-size   svc_number.elf 
    text	   data	    bss	    dec	    hex	filename
-   5848	    120	   1584	   7552	   1d80	fault_gen.elf
+    784	     16	   1568	   2368	    940	svc_number.elf
 Finished building: default.size.stdout
  
-13:15:52 **** Incremental Build of configuration Debug for project fault_gen ****
+12:21:09 **** Incremental Build of configuration Debug for project svc_number ****
 make -j6 all 
-arm-none-eabi-size   fault_gen.elf 
+arm-none-eabi-size   svc_number.elf 
    text	   data	    bss	    dec	    hex	filename
-   5848	    120	   1584	   7552	   1d80	fault_gen.elf
+    784	     16	   1568	   2368	    940	svc_number.elf
 Finished building: default.size.stdout
  
