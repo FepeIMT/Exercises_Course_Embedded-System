@@ -836,3 +836,24 @@
 2020-09-03 05:20:16,500 [INFO] CrossSelectorPresenter:1319 - Cross Selector saved comparison directory: C:\Users\pepe_\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
 2020-09-03 05:22:20,764 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.15.1
 2020-09-03 05:22:20,765 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.15.0
+2020-09-03 13:01:34,737 [INFO] MainUpdater:2230 - connection check result : 10
+2020-09-03 13:01:34,738 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2020-09-03 13:01:34,766 [INFO] McuFinderGlobals:40 - Set McuFinder mode to 2 (CubeIDE integrated)
+2020-09-03 13:01:34,766 [INFO] FinderPluginLoader:86 - Searching for filters in installed packs
+2020-09-03 13:01:35,217 [INFO] LoadUrlFilesThread:161 - End of LoadServerUrlFiles without Thread
+2020-09-03 13:01:35,217 [INFO] McuDetailPanel:181 - Set advertising image to C:/Users/pepe_/STM32Cube/Repository/\STM32Cube_ecosystem_N4273S_big.jpg
+2020-09-03 13:01:35,384 [INFO] McuFilterPanel:249 - Update 0 favorites MCUs
+2020-09-03 13:01:35,465 [INFO] LoadUrlFilesThread:161 - End of LoadServerUrlFiles without Thread
+2020-09-03 13:01:35,466 [INFO] BoardDetailPanel:180 - Set advertising image to C:/Users/pepe_/STM32Cube/Repository/\STM32Cube_ecosystem_N4273S_big.jpg
+2020-09-03 13:01:35,473 [INFO] BoardFilterPanel:211 - Update 0 favorites Boards
+2020-09-03 13:01:35,485 [INFO] CrossSelectorPresenter:1319 - Cross Selector saved comparison directory: C:\Users\pepe_\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2020-09-03 13:02:29,421 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.15.1
+2020-09-03 13:02:29,422 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.15.0
+2020-09-07 12:22:40,864 [INFO] Activator:176 - 
+
+
+2020-09-07 12:22:40,866 [INFO] Activator:177 - !SESSION log4j initialized
+2020-09-08 19:24:56,202 [INFO] Activator:176 - 
+
+
+2020-09-08 19:24:56,206 [INFO] Activator:177 - !SESSION log4j initialized
